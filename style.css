@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+body {
+  background: linear-gradient(180deg, #B00B69, #042069);
+  background-repeat : no-repeat;
+  background-attachment: fixed;
+  Font-Size: 100%;
+  color: antiquewhite;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+select {
+  background-color: dodgerblue;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-size: 150%
+}
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+input {
+  display: block;
+  margin: 0 auto;
+}

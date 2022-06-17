@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang='en-GB'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="The Best Converter for Speeds and Velocities.">
+  <title>Useless Motion Converter</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="preload" href="style.css" as="style">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h1 style="color:orangered;">Almost Useless Converter</h1>
+  <br>
+  <div id="hideIfNoJS" class='centering' style='display:none;'>
+    <form>
+      <!-- inputs -->
+      <input type='number' id='num_to_con' style='width:175px' oninput="inputChange()" value='0'>
+      <br>
+      <select id="inputDistanceUnit" onchange="inputChange()">
+        <option value="metres" selected="selected">
+          metres
+        </option>
+        <option value="feet">
+          feet
+        </option>
+        <option value="kilometres">
+          kilometres
+        </option>
+        <option value="lightyears">
+          lightyears
+        </option>
+        <option value="lutontolondon">
+          Luton to Londons
+        </option>
+        <option value="747 wingspan">
+          747 Wingspans
+        </option>
+        <option value='AU'>
+          Astrological Units
+        </option>
+        <option value="Length of Texas">
+          Lengths of Texas
+        </option>
+        <option value="Brain length">
+          Brain lengths
+        </option>
+        <option value="Obama">
+          Barack Obamas
+        </option>
+        <option value="Scots Mile">
+          Scot's miles (pre 1700)
+        </option>
+        <option value="Sun size">
+          Sun's circumferences
+        </option>
+      </select>
+      per
+      <select id="inputTimeUnit" onchange="inputChange()">
+        <option value="millisecond">
+          millisecond
+        </option>
+        <option value="half-life of oxygen-13">
+          half-life of oxygen-13
+        </option>
+        <option value="second" selected="selected">
+          second
+        </option>
+        <option value="kilosecond">
+          kilosecond
+        </option>
+        <option value="megasecond">
+          megasecond
+        </option>
+        <option value="gigasecond">
+          gigasecond
+        </option>
+        <option value="terasecond">
+          terasecond
+        </option>
+        <option value="attosecond">
+          attosecond
+        </option>
+        <option value="minute">
+          minute
+        </option>
+        <option value="hour">
+          hour
+          </options>
+        <option value="day">
+          day
+        </option>
+        <option value="year">
+          year
+        </option>
+        <option value="Cats movie">
+          Runtime of Cats (2019)
+        </option>
+        <option value="Stephen Hawking life">
+          Hawking's lifespan
+        </option>
+        <option value="Fortnight">
+          Fortnight
+        </option>
+        <option value="Decasecond">
+          Decasecond
+        </option>
+        <option value="Jiffy">
+          Jiffy
+        </option>
+        <option value="Warhol">
+          Warhol
+        </option>
+        <option value="caffeine">
+          Half-life of caffeine
+        </option>
+        <option value="actinium-222">
+          Half-life of actinium-222
+        </option>
+      </select>
+      <br>
+      <p>=</p>
+      <!-- outputs -->
+      <input type='number' id='output' style='width:175px' oninput="outputChange()" value='0'>
+      <br>
+      <select id="outputDistanceUnit" onchange="inputChange()">
+        <option value="metres" selected="selected">
+          metres
+        </option>
+        <option value="feet">
+          feet
+        </option>
+        <option value="kilometres">
+          kilometres
+        </option>
+        <option value="lightyears">
+          lightyears
+        </option>
+        <option value="lutontolondon">
+          Luton to Londons
+        </option>
+        <option value="747 wingspan">
+          747 Wingspans
+        </option>
+        <option value='AU'>
+          Astrological Units
+        </option>
+        <option value="Length of Texas">
+          Lengths of Texas
+        </option>
+        <option value="Brain length">
+          Brain lengths
+        </option>
+        <option value="Obama">
+          Barack Obamas
+        </option>
+        <option value="Scots Mile">
+          Scot's miles (pre 1700)
+        </option>
+        <option value="Sun size">
+          Sun's circumferences
+        </option>
+      </select>
+      per
+      <select id="outputTimeUnit" onchange="inputChange()">
+        <option value="millisecond">
+          millisecond
+        </option>
+        <option value="half-life of oxygen-13">
+          half-life of oxygen-13
+        </option>
+        <option value="second" selected="selected">
+          second
+        </option>
+        <option value="kilosecond">
+          kilosecond
+        </option>
+        <option value="megasecond">
+          megasecond
+        </option>
+        <option value="gigasecond">
+          gigasecond
+        </option>
+        <option value="terasecond">
+          terasecond
+        </option>
+        <option value="attosecond">
+          attosecond
+        </option>
+        <option value="minute">
+          minute
+        </option>
+        <option value="hour">
+          hour
+          </options>
+        <option value="day">
+          day
+        </option>
+        <option value="year">
+          year
+        </option>
+        <option value="Cats movie">
+          Runtime of Cats (2019)
+        </option>
+        <option value="Stephen Hawking life">
+          Hawking's lifespan
+        </option>
+        <option value="Fortnight">
+          Fortnight
+        </option>
+        <option value="Decasecond">
+          Decasecond
+        </option>
+        <option value="Jiffy">
+          Jiffy
+        </option>
+        <option value="Warhol">
+          Warhol
+        </option>
+        <option value="caffeine">
+          Half-life of caffeine
+        </option>
+        <option value="actinium-222">
+          Half-life of actinium-222
+        </option>
+      </select>
+    </form>
+
+  </div>
+  <noscript class="centering">
+    Your browser doesn't support JavaScript.<br>
+    JavaScript is needed for this page to function.<br>
+    Please move to browser which allows JavaScript.<br>
+    Or you could allow this page to run JavaScript.
+  </noscript>
+  <script type="text/javascript">
+    document.getElementById('hideIfNoJS').style.display = 'flex';
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
