@@ -53,6 +53,9 @@ function distanceUnitSwitch(value) {
   switch(value) {
     // each is equivalent of 1 metre in its unit
     // 1/1000 km is 1 metre 
+    case "milimetres":
+      var convertToMetres = 1/0.001;
+      break;
     case 'centimetres':
       var convertToMetres = 1/0.01;
       break;
