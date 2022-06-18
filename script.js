@@ -130,7 +130,7 @@ function distanceUnitSwitch(value) {
       var convertToMetres = (1/149597870700);
       break;
     case 'lightyears':
-      var convertToMetres = (1/9460730472580760);
+      var convertToMetres = (1/9460730472580800);
       break;
     case "parsec":
       // 30856775714409184m // 3.26 ly
@@ -227,8 +227,12 @@ function timeUnitSwitch(value) {
       var convertToSecond = 1/31536000;
       break;
     case 'tropical year':
-      // 365.2422 days
-      var convertToSecond = 1/31556926.1;
+      // 365.24219 days
+      var convertToSecond = 1/31556925.2;
+      break;
+    case 'julian year':
+      // 365.25 SI days // 31557600 secs
+      var convertToSecond = 1/31557600;
       break;
     case "28/06/2025":
       // 804,384,000 secs // 9310 days // approx 25.5 years
