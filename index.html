@@ -9,6 +9,7 @@
   <link rel="icon" href="/images/favicon6.ico">
   <link rel="preload" href="style.css" as="style">
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
   <div id="hideIfNoJS" class='centering' style='display:none;'>
     <form>
       <!-- inputs -->
-      <input type='number' id='num_to_con' style='width:175px' oninput="inputChange()" value='0'>
+      <input type='number' id='num_to_con' style='width:200px; display:inline; horizontal-align:middle;' oninput="inputChange()" value='0' >
+      <button class="randomise" type="button" onclick="randomChangeInput()"><i class="material-icons" style="font-size:14px;">shuffle</i></button>
       <br>
       <select id="inputDistanceUnit" onchange="inputChange()">
         <option value="milimetres">
@@ -169,10 +171,12 @@
           terasecond
         </option>
       </select>
-      <input type="button" value="Randomise input units" onclick="randomChangeInput()"/>
+      
       <p>=</p>
       <!-- outputs -->
-      <input type='number' id='output' style='width:175px' oninput="outputChange()" value='0'>
+      <input type='number' id='output' style='width:200px; display:inline;' oninput="outputChange()" value='0'>
+      <button class="randomise" type="button" onclick="randomChangeOutput()"><i class="material-icons" style="font-size:14px;">shuffle</i></button>
+    
       <br>
       <select id="outputDistanceUnit" onchange="inputChange()">
         <option value="milimetres">
@@ -323,7 +327,6 @@
           terasecond
         </option>
       </select>
-      <input type="button" value="Randomise output units" onclick="randomChangeOutput()"/>
     </form>
 
   </div>

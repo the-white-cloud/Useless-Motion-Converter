@@ -6,6 +6,7 @@ body {
   Font-Size: 100%;
   color: antiquewhite;
   font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
 }
 select {
   background-color: dodgerblue;
@@ -27,4 +28,12 @@ p {
 input {
   display: block;
   margin: 0 auto;
+}
+
+.randomise {
+  border-radius: 25%;
+  padding: 3px;
+}
+.randomiseDiv {
+  text-align: center;
 }
