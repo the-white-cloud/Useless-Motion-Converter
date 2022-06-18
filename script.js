@@ -98,12 +98,38 @@ function distanceUnitSwitch(value) {
       var convertToMetres = (1/1815);
       break; 
     case 'Sun size':
-      // 4.379 million km
+      // 4.379 million km 
+      // circumfrence 
       var convertToMetres = (1/4379000000);
+      break;
+    case "long A4 side":
+      // 0.297 m
+      var convertToMetres = (1/0.297);
+      break;
+    case "short A4 side":
+      // 0.210 m 
+      var convertToMetres = (1/0.210);
+      break;
+    case "parsec":
+      // 30856775714409184m // 3.26 ly
+      var convertToMetres = (1/30856775714409184);
+      break;
+    case "attoparsec":
+      // 1 pc * 10**-18 // 0.030856775714409184m
+      var convertToMetres = (1/0.030856775714409184)
+      break;
+    case "hammer":
+      // 0.01905m // used by valve
+      var convertToMetres = 1/0.01905;
+      break;
+    case "lunar":
+      // 380,000 km // distance between earth and moon
+      var convertToMetres = 1/380000000;
       break;
     default:
       var convertToMetres = 1;
-      console.log(value, "has not be added")
+      console.log(value, "has not be added");
+      alert(value+"has not be added");
   } 
   return convertToMetres
 }
@@ -179,8 +205,8 @@ function timeUnitSwitch(value) {
       var convertToSecond = 1/10;
       break;   
     case 'Jiffy':
-      // 1/65,536 secs
-      var convertToSecond = 65536;
+      // 3*10^-24 secs
+      var convertToSecond = (1/(3*(10**-24)));
       break; 
     case 'Warhol':
       // 15 mins
@@ -194,10 +220,24 @@ function timeUnitSwitch(value) {
       // 5 seconds
       var convertToSecond = 1/5;
       break;
+    case 'nanocentury':
+      // 3.155695200 secs
+      // 1 billionth of a century 
+      var convertToSecond = 1/3.155695200;
+      break;
+    case 'microcentury':
+      // 52m and 35.6952 secs // 3155.6952 secs
+      // 1 millionth of a century
+      var convertToSecond = (1/3155.6952);
+      break;
+    case "28/06/2025":
+      // 804,384,000 secs
+      var convertToMetres = 1/804384000;
+      break;
     default:
       var convertToSecond = 1;
-      console.log(inputUnit, "has not be added")
-      alert(inputUnit+"has not be added")
+      console.log(value, "has not be added");
+      alert(value+"has not be added");
   } 
   return convertToSecond  
 }
