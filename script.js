@@ -1,3 +1,8 @@
+function randint(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+}
 function inputChange() {
   var numberValue = getValueOfInput();
   var distanceInputUnit = getUnitOfInputDistance();
@@ -107,6 +112,9 @@ function distanceUnitSwitch(value) {
     case 'lutontolondon':
       // 46.73 km
       var convertToMetres = (1/46730);
+      break;
+    case '65461 metres':
+      var convertToMetres = (1/65461);
       break;
     case 'Length of Texas':
       // 1,289 km
@@ -257,8 +265,24 @@ function timeUnitSwitch(value) {
   } 
   return convertToSecond  
 }
+/////////////////////////////////////////////////
 var ran = Math.floor(Math.random() * 101);
 if (ran === 100) {
   alert("You've won!");
   alert("nothing :(");
+}
+////////////////////////////////////////////////////
+function randomChangeInput() {
+  var distance = document.getElementById("inputDistanceUnit").length
+  var time = document.getElementById("inputTimeUnit").length
+  document.getElementById('inputDistanceUnit').getElementsByTagName('option')[randint(0,distance-1)].selected = true;
+  document.getElementById('inputTimeUnit').getElementsByTagName('option')[randint(0,time-1)].selected = true;
+  inputChange()
+}
+function randomChangeOutput() {
+  var distance = document.getElementById("outputDistanceUnit").length
+  var time = document.getElementById("outputTimeUnit").length
+  document.getElementById('outputDistanceUnit').getElementsByTagName('option')[randint(0,distance-1)].selected = true;
+  document.getElementById('outputTimeUnit').getElementsByTagName('option')[randint(0,time-1)].selected = true;
+  inputChange()
 }
