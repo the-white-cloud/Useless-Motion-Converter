@@ -54,86 +54,89 @@ function distanceUnitSwitch(value) {
     // each is equivalent of 1 metre in its unit
     // 1/1000 km is 1 metre 
     case 'centimetres':
-      var convertToMetres = 100;
-      break;
-    case 'metres':
-      var convertToMetres = 1;
-      break;
-    case 'kilometres':
-      var convertToMetres = (1/1000);
-      break;
-    case 'feet':
-      var convertToMetres = 3.2808399;
-      break;
-    case 'lightyears':
-      var convertToMetres = (1/9460730472580760);
-      break;
-    case "lightseconds":
-      // 299,792,458m
-      var convertToMetres = (1/299792458);
-      break;
-    case 'lutontolondon':
-      // 46.73 km
-      var convertToMetres = (1/46730);
-      break;
-    case '747 wingspan':
-      // 68.4m
-      var convertToMetres = (1/68.4);
-      break;  
-    case 'AU':
-      // 149597870700 m
-      var convertToMetres = (1/149597870700);
-      break;
-    case 'Length of Texas':
-      // 1,289 km
-      var convertToMetres = (1/1289000);
-      break;   
-    case 'Brain length':
-      // 6.5 inches
-      var convertToMetres = (1/0.1651);
-      break; 
-    case 'Obama':
-      // height of obama in march 2016
-      // 186.69 cm
-      var convertToMetres = (1/1.8669)
-      break;
-    case 'Scots Mile':
-      // 1,815 m
-      var convertToMetres = (1/1815);
-      break; 
-    case 'Sun size':
-      // 4.379 million km 
-      // circumfrence 
-      var convertToMetres = (1/4379000000);
-      break;
-    case "long A4 side":
-      // 0.297 m
-      var convertToMetres = (1/0.297);
-      break;
-    case "short A4 side":
-      // 0.210 m 
-      var convertToMetres = (1/0.210);
-      break;
-    case "parsec":
-      // 30856775714409184m // 3.26 ly
-      var convertToMetres = (1/30856775714409184);
-      break;
-    case "attoparsec":
-      // 1 pc * 10**-18 // 0.030856775714409184m
-      var convertToMetres = (1/0.030856775714409184)
+      var convertToMetres = 1/0.01;
       break;
     case "hammer":
       // 0.01905m // used by valve
       var convertToMetres = 1/0.01905;
       break;
+    case "attoparsec":
+      // 1 pc * 10**-18 // 0.030856775714409184m
+      var convertToMetres = (1/0.030856775714409184)
+      break;
+    case 'Brain length':
+      // 6.5 inches
+      var convertToMetres = 1/0.1651;
+      break; 
+    case "short A4 side":
+      // 0.210 m 
+      var convertToMetres = (1/0.210);
+      break;
+    case "long A4 side":
+      // 0.297 m
+      var convertToMetres = 1/0.297;
+      break;
+    case 'feet':
+      var convertToMetres = (1/0.3048);
+      break;
+    case 'metres':
+      var convertToMetres = 1;
+      break;
+    case 'Obama':
+      // height of obama in march 2016
+      // 186.69 cm
+      var convertToMetres = (1/1.8669)
+      break;
+    case '747 wingspan':
+      // 68.4m
+      var convertToMetres = (1/68.4);
+      break; 
+    case 'kilometres':
+      var convertToMetres = (1/1000);
+      break;
+    case 'mile':
+      var convertToMetres = (1/1609.344);
+      break;
+    case 'Scots Mile':
+      // 1,815 m
+      var convertToMetres = (1/1815);
+      break; 
+    case 'lutontolondon':
+      // 46.73 km
+      var convertToMetres = (1/46730);
+      break;
+    case 'Length of Texas':
+      // 1,289 km
+      var convertToMetres = (1/1289000);
+      break; 
+    case "lightseconds":
+      // 299,792,458m
+      var convertToMetres = (1/299792458);
+      break;
     case "lunar":
       // 380,000 km // distance between earth and moon
-      var convertToMetres = 1/380000000;
+      var convertToMetres = (1/380000000);
+      break;
+    case 'Sun size':
+      // 4.379 million km 
+      // circumfrence 
+      var convertToMetres = (1/4379000000);
+      break;
+    case 'AU':
+      // 149597870700 m
+      var convertToMetres = (1/149597870700);
+      break;
+    case 'lightyears':
+      var convertToMetres = (1/9460730472580760);
+      break;
+    case "parsec":
+      // 30856775714409184m // 3.26 ly
+      var convertToMetres = (1/30856775714409184);
       break;
     default:
       var convertToMetres = 1;
-      console.log(value, "has not be added");
-      alert(value+"has not be added");
+      console.log(value+" has not be added");
+      alert(value+" has not be added");
   } 
   return convertToMetres
 }
@@ -242,8 +245,8 @@ function timeUnitSwitch(value) {
       break; 
     default:
       var convertToSecond = 1;
-      console.log(value, "has not be added");
-      alert(value+"has not be added");
+      console.log(value+" has not be added");
+      alert(value+" has not be added");
   } 
   return convertToSecond  
 }
