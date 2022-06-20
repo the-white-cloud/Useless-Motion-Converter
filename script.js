@@ -76,6 +76,10 @@ function distanceUnitSwitch(value) {
       // 6.5 inches
       var convertToMetres = 1/0.1651;
       break; 
+    case 'aubergine':
+      // 0.2032 m
+      var convertToMetres = 1/0.2032
+      break;
     case "short A4 side":
       // 0.210 m 
       var convertToMetres = (1/0.210);
@@ -112,6 +116,10 @@ function distanceUnitSwitch(value) {
     case 'lutontolondon':
       // 46.73 km
       var convertToMetres = (1/46730);
+      break;
+    case "Epping to West Ruislip":
+      // 54.9 km
+      var convertToMetres = 1/54900;
       break;
     case '65461 metres':
       var convertToMetres = (1/65461);
