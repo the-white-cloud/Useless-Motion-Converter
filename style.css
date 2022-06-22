@@ -8,10 +8,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
 }
-select {
-  background-color: dodgerblue;
-  color: white;
-}
+
 h1 {
   text-align: center;
 }
@@ -25,11 +22,6 @@ p {
   align-items: center;
   height: 200px;
 }
-input {
-  display: block;
-  margin: 0 auto;
-}
-
 .randomise {
   border-radius: 25%;
   padding: 3px;
@@ -37,3 +29,32 @@ input {
 .randomiseDiv {
   text-align: center;
 }
+
+@media (prefers-color-scheme: light) {
+  select {
+    background-color: dodgerblue;
+  }
+  .maintitle {
+    color:orangered;
+  }
+  input, button {
+    color: white;
+    background: antiquewhite;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  input, button {
+    color: antiquewhite;
+    background:dimgray;
+    outline: none;
+  }
+  select {
+    background-color: darkslateblue;
+    color: antiquewhite;
+  }
+  .maintitle {
+    color:palevioletred;
+  }
+}
+
