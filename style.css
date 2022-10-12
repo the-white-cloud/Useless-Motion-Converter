@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 body {
-  background: linear-gradient(180deg, #B00B69, #042069);
-  background-repeat : no-repeat;
-  background-attachment: fixed;
   Font-Size: 100%;
-  color: antiquewhite;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
 }
@@ -30,31 +26,45 @@ p {
   text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  body {
+    background: white;
+    background: linear-gradient(180deg, #B00B69, #042069);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
   select {
     background-color: dodgerblue;
+    color: white;
   }
   .maintitle {
     color:orangered;
   }
   input, button {
-    color: white;
-    background: antiquewhite;
+    color: black;
+    background: white;
   }
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    background: linear-gradient(180deg, #580634, #021034);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+  }
   input, button {
-    color: antiquewhite;
-    background:dimgray;
+    color: white;
+    background:#1F1F1F;
     outline: none;
   }
   select {
-    background-color: darkslateblue;
-    color: antiquewhite;
+    background-color: #11114e;
+    color: white;
   }
   .maintitle {
-    color:palevioletred;
+    color:#bf3400;
   }
 }
 

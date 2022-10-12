@@ -1,0 +1,4 @@
+change it so when the screen is too small to fit all of the distance per time spread it out like distance/nper/ntime
+
+add length of doible decker bus
+average cat tail length
