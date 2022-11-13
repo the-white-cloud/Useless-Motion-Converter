@@ -284,7 +284,7 @@ function randomChangeInput() {
   var time = document.getElementById("inputTimeUnit").length
   document.getElementById('inputDistanceUnit').getElementsByTagName('option')[randint(0, distance - 1)].selected = true;
   document.getElementById('inputTimeUnit').getElementsByTagName('option')[randint(0, time - 1)].selected = true;
-  inputChange()
+  inputChange() 
 }
 function randomChangeOutput() {
   var distance = document.getElementById("outputDistanceUnit").length
