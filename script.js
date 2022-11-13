@@ -3,6 +3,7 @@ function randint(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
 }
+
 function inputChange() {
   var numberValue = getValueOfInput();
   var distanceInputUnit = getUnitOfInputDistance();
@@ -272,11 +273,6 @@ function timeUnitSwitch(value) {
       alert(value + " has not be added");
   }
   return convertToSecond
-}
-/////////////////////////////////////////////////
-if (randint(0,100) === 100) {
-  alert("You've won!");
-  alert("nothing :(");
 }
 ////////////////////////////////////////////////////
 function randomChangeInput() {
