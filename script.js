@@ -235,9 +235,8 @@ function timeUnitSwitch(value) {
       // 1000000 secs // approx 11 days
       var convertToSecond = 1 / 1000000;
       break;
-    case 'Fortnite':
+    case 'fortnight':
       // 14 days
-      // yes we know it is spelled fortnight
       var convertToSecond = 1 / 1210000;
       break;
     case 'year':
