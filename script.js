@@ -235,7 +235,7 @@ function timeUnitSwitch(value) {
       // 1000000 secs // approx 11 days
       var convertToSecond = 1 / 1000000;
       break;
-    case 'fortnight':
+    case 'Fortnight':
       // 14 days
       var convertToSecond = 1 / 1210000;
       break;
