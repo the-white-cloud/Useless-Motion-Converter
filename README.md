@@ -1,3 +1,8 @@
 # Useless-Motion-Converter
-This project is a webpage which can convert speeds into weird units.
-This project is not going to be 100 percent precise due to JS's limitation with numbers.
+## What is this project?
+* This project is a webpage which can convert velocities into weird units.
+* This is a project inspired by boredom
+## What is this project not?
+* This project is not going to be 100 percent precise due to JS's limitation with numbers and me not caring enough to find out if there is another way
+* JS is not my main language so i dont really care
+* Neither is html or css
