@@ -18,8 +18,8 @@
   <div id="hideIfNoJS" class='centering' style='display:none;'>
     <form>
       <!-- inputs -->
-      <input type='number' id='num_to_con' style='width:200px; display:inline; horizontal-align:middle;'
-        oninput="inputChange()" value='1'>
+      <div class="conv_num_thing"><input type='number' id='num_to_con' style='width:200px; display:inline; horizontal-align:middle;'
+        oninput="inputChange()" value='1'></div>
       <button class="randomise" type="button" onclick="randomChangeInput()"><i class="material-icons"
           style="font-size:14px;">shuffle</i></button>
       <br>
@@ -97,7 +97,7 @@
           parsecs
         </option>
       </select>
-      per
+      <div class='per'>per</div>
       <select id="inputTimeUnit" onchange="inputChange()">
         <option value="Jiffy">
           jiffy
@@ -177,7 +177,7 @@
       </select>
       <p>=</p>
       <!-- outputs -->
-      <input type='number' id='output' style='width:200px; display:inline;' oninput="outputChange()" value='1'>
+      <div class="conv_num_thing"><input type='number' id='output' style='width:200px; display:inline;' oninput="outputChange()" value='1'></div>
       <button class="randomise" type="button" onclick="randomChangeOutput()"><i class="material-icons"
           style="font-size:14px;">shuffle</i></button>
       <br>
@@ -255,7 +255,7 @@
           parsecs
         </option>
       </select>
-      per
+      <div class='per'>per</div>
       <select id="outputTimeUnit" onchange="inputChange()">
         <option value="Jiffy">
           jiffy

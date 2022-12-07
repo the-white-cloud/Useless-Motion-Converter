@@ -74,3 +74,21 @@ p {
 input:focus, button:focus, select:focus {
   border: 2px solid skyblue;
  } 
+
+@media (min-width: 600px) {
+  .per {
+    display: inline;
+  }
+  .conv_num_thing {
+    display: inline;
+  }
+}
+@media (max-width: 599px) {
+  .randomise {
+    margin: 5px;
+  }
+  .conv_num_thing {
+    text-align: center;
+    display: inline;
+  }
+}
