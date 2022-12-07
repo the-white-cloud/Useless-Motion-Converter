@@ -15,14 +15,11 @@
 <body>
   <h1 class="maintitle">Almost Useless Converter</h1>
   <br>
-  <br class="hidden">
-  <br class="hidden">
-  <br class="hidden">
   <div id="hideIfNoJS" class='centering' style='display:none;'>
     <form>
       <!-- inputs -->
-      <div class="conv_num_thing"><input type='number' id='num_to_con' style='width:200px; display:inline; horizontal-align:middle;'
-        oninput="inputChange()" value='1'></div>
+      <input type='number' id='num_to_con' style='width:200px; display:inline; horizontal-align:middle;'
+        oninput="inputChange()" value='1'>
       <button class="randomise" type="button" onclick="randomChangeInput()"><i class="material-icons"
           style="font-size:14px;">shuffle</i></button>
       <br>
@@ -100,7 +97,7 @@
           parsecs
         </option>
       </select>
-      <div class='per'>per</div>
+      per
       <select id="inputTimeUnit" onchange="inputChange()">
         <option value="Jiffy">
           jiffy
@@ -180,7 +177,7 @@
       </select>
       <p>=</p>
       <!-- outputs -->
-      <div class="conv_num_thing"><input type='number' id='output' style='width:200px; display:inline;' oninput="outputChange()" value='1'></div>
+      <input type='number' id='output' style='width:200px; display:inline;' oninput="outputChange()" value='1'>
       <button class="randomise" type="button" onclick="randomChangeOutput()"><i class="material-icons"
           style="font-size:14px;">shuffle</i></button>
       <br>
@@ -258,7 +255,7 @@
           parsecs
         </option>
       </select>
-      <div class='per'>per</div>
+      per
       <select id="outputTimeUnit" onchange="inputChange()">
         <option value="Jiffy">
           jiffy
