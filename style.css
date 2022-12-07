@@ -79,6 +79,9 @@ input:focus, button:focus, select:focus {
   .per {
     display: inline;
   }
+  .maintitle {
+    margin: 10px;
+}
 }
 @media (max-width: 599px) {
   .randomise {
