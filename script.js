@@ -167,23 +167,23 @@ function timeUnitSwitch(value) {
     // 1000 ms is one sec
     // 1/60 min is one sec
     case 'plancktime':
-      var convertToSecond = 1 / 0.000000000000000000000000000000000000000005390559999;
+      var convertToSecond = 0.000000000000000000000000000000000000000005390559999**-1;
       break;
     case 'Jiffy':
       // 3*10^-24 secs
       // 0.0000000000000000000003
-      var convertToSecond = (1 / (3 * (10 ** -24)));
+      var convertToSecond = (3 * (10 ** -24))**-1;
       break;
     case 'attosecond':
       // 1/1000000000000000000 secs
-      var convertToSecond = 1000000000000000000;
+      var convertToSecond = 10**18;
       break;
     case 'spark':
       // 10 ns
       var convertToSecond = 10**8;
       break;
     case 'millisecond':
-      var convertToSecond = 1000;
+      var convertToSecond = 10**3;
       break;
     case 'half-life of oxygen-13':
       // 8.585 ms
@@ -203,7 +203,7 @@ function timeUnitSwitch(value) {
       break;
     case 'Decasecond':
       // 10 secs
-      var convertToSecond = 1 / 10;
+      var convertToSecond = 10**-1;
       break;
     case 'minute':
       var convertToSecond = 1 / 60;
@@ -214,7 +214,7 @@ function timeUnitSwitch(value) {
       break;
     case 'kilosecond':
       // 1000 secs
-      var convertToSecond = 1 / 1000;
+      var convertToSecond = 10**-3;
       break;
     case 'microcentury':
       // 52m and 35.6952 secs // 3155.6952 secs
@@ -237,7 +237,7 @@ function timeUnitSwitch(value) {
       break;
     case 'megasecond':
       // 1000000 secs // approx 11 days
-      var convertToSecond = 1 / 1000000;
+      var convertToSecond = 10**-6;
       break;
     case 'Fortnight':
       // 14 days
@@ -260,7 +260,7 @@ function timeUnitSwitch(value) {
       break;
     case 'gigasecond':
       // 1000000000 secs
-      var convertToSecond = 1 / 1000000000;
+      var convertToSecond = 10**-9;
       break;
     case 'Stephen Hawking life':
       // 27824 days 
@@ -268,7 +268,7 @@ function timeUnitSwitch(value) {
       break;
     case 'terasecond':
       // 1000000000000 secs
-      var convertToSecond = 1 / 1000000000000;
+      var convertToSecond = 10**-12;
       break;
     default:
       var convertToSecond = 1;
