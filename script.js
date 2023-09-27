@@ -166,7 +166,7 @@ function timeUnitSwitch(value) {
     // each is the value of one second in its unit 
     // 1000 ms is one sec
     // 1/60 min is one sec
-    case 'Planck time':
+    case 'planck time':
       var convertToSecond = 1 / 0.000000000000000000000000000000000000000005390559999;
       break;
     case 'Jiffy':
@@ -177,6 +177,10 @@ function timeUnitSwitch(value) {
     case 'attosecond':
       // 1/1000000000000000000 secs
       var convertToSecond = 1000000000000000000;
+      break;
+    case 'spark':
+      // 10 ns
+      var convertToSecond = 10**8;
       break;
     case 'millisecond':
       var convertToSecond = 1000;
