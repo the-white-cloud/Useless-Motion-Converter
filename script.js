@@ -166,7 +166,7 @@ function timeUnitSwitch(value) {
     // each is the value of one second in its unit 
     // 1000 ms is one sec
     // 1/60 min is one sec
-    case 'planck time':
+    case 'plancktime':
       var convertToSecond = 1 / 0.000000000000000000000000000000000000000005390559999;
       break;
     case 'Jiffy':
